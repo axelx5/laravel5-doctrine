@@ -162,11 +162,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        LaravelDoctrine\ORM\DoctrineServiceProvider::class,
+        LaravelDoctrine\Migrations\MigrationsServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
-        LaravelDoctrine\ORM\DoctrineServiceProvider::class,
         //
 
         /*

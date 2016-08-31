@@ -74,7 +74,7 @@ return [
             |--------------------------------------------------------------------------
             */
             'mapping_types' => [
-                //'enum' => 'string'
+                'enum' => 'string'
             ]
         ]
     ],
@@ -110,7 +110,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'custom_types' => [
-        'json' => LaravelDoctrine\ORM\Types\Json::class
+        'json' => LaravelDoctrine\ORM\Types\Json::class,
+        'hashid' => Blake\Dbal\Types\HashidType::class,
     ],
     /*
     |--------------------------------------------------------------------------
@@ -170,7 +171,7 @@ return [
     |
     */
     'gedmo' => [
-        'all_mappings' => false
+        'all_mappings' => true
     ],
     /*
      |--------------------------------------------------------------------------
